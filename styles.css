@@ -263,6 +263,15 @@ body {
   max-width: 640px;
 }
 
+.hero-logo {
+  display: block;
+  margin: 0 auto 1.5rem;
+  height: 40px;
+  width: auto;
+  max-width: 220px;
+  object-fit: contain;
+}
+
 .hero-headline {
   font-size: clamp(1.65rem, 5vw, 2.75rem);
   font-weight: 800;
@@ -711,11 +720,60 @@ body {
 }
 
 /* ========== PRICE ========== */
-.price-compare {
+.price-badge {
+  display: inline-block;
   text-align: center;
-  font-size: clamp(1.1rem, 2.5vw, 1.25rem);
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-neon);
+  background: rgba(99, 102, 241, 0.2);
+  border: 1px solid rgba(99, 102, 241, 0.4);
+  border-radius: 999px;
+}
+
+.price-strike {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 0 0.5rem;
+}
+
+.price-old {
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--text-muted);
+  text-decoration: line-through;
+}
+
+.section-price .price-now {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: var(--accent-neon);
+  text-shadow: 0 0 20px var(--accent-glow);
+}
+
+.cta-btn .price-now {
+  font-weight: 700;
+}
+
+.price-save {
+  text-align: center;
+  font-size: clamp(1rem, 2vw, 1.15rem);
   color: var(--text-muted);
   margin: 0 0 0.5rem;
+}
+
+/* Hero CTA inline price styling */
+.cta-btn .price-was {
+  font-size: 0.85em;
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .price-impact {
@@ -843,6 +901,16 @@ body {
   color: var(--text-muted);
   font-size: 0.9rem;
   border-top: 1px solid var(--border-subtle);
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto 0.75rem;
+  height: 32px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  opacity: 0.9;
 }
 
 /* ========== FULL MOBILE RESPONSIVE ========== */
